@@ -1,0 +1,584 @@
+/* ── Reset & base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #0d1117;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* ── Hoja A4 centrada ── */
+.page {
+  background: #ffffff;
+  width: 21cm;
+  min-height: 29.7cm;
+  padding: 2.5cm 3cm;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+  border-top: 8px solid #1a73e8;
+}
+
+/* ── Encabezado: logo + universidad ── */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 1.2rem;
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+.university {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.faculty {
+  font-size: 0.85rem;
+  color: #555;
+  text-align: center;
+}
+
+/* ── Cuerpo central ── */
+.body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.4rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.subject-tag {
+  background: #1a73e8;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 0.35rem 1.2rem;
+  border-radius: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #0d1117;
+  line-height: 1.2;
+}
+
+.title span {
+  color: #1a73e8;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #555;
+  max-width: 14cm;
+  line-height: 1.6;
+}
+
+/* ── Línea decorativa ── */
+.divider {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #1a73e8, #42a5f5);
+  border-radius: 2px;
+}
+
+/* ── Tabla de datos ── */
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem;
+  width: 100%;
+  max-width: 13cm;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  text-align: left;
+}
+
+.info-item label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #1a73e8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.info-item span {
+  font-size: 0.9rem;
+  color: #222;
+  font-weight: 500;
+}
+
+/* ── Pie de página ── */
+.footer {
+  width: 100%;
+  border-top: 2px solid #e0e0e0;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  color: #888;
+}
+
+/* ── Impresión ── */
+@media print {
+  body { background: #fff; padding: 0; }
+  .page { box-shadow: none; border-top: 8px solid #1a73e8; }
+}
+
+/* ══════════════════════════════════════════
+   PÁGINA DE CONTENIDO (tablas, etc.)
+══════════════════════════════════════════ */
+
+.page-content {
+  /* gap del body ya da la separación */
+}
+
+.content-body {
+  flex: 1;
+  width: 100%;
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.page-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #0d1117;
+  text-align: center;
+}
+
+.page-title span {
+  color: #1a73e8;
+}
+
+.page-desc {
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+/* ── Sección de tabla ── */
+.ascii-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.section-heading {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #1a73e8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-left: 4px solid #1a73e8;
+  padding-left: 0.6rem;
+}
+
+/* ── Tabla ASCII ── */
+.ascii-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.75rem;
+}
+
+.ascii-table thead tr {
+  background: #1a73e8;
+  color: #fff;
+}
+
+.ascii-table th {
+  padding: 0.45rem 0.6rem;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.ascii-table td {
+  padding: 0.3rem 0.6rem;
+  text-align: center;
+  border-bottom: 1px solid #e8e8e8;
+  color: #333;
+  font-family: 'Courier New', monospace;
+}
+
+.ascii-table tbody tr:nth-child(even) {
+  background: #f4f8ff;
+}
+
+.ascii-table tbody tr:hover {
+  background: #dceeff;
+}
+
+/* ── Resultado binario destacado ── */
+.binary-result {
+  background: #0d1117;
+  color: #42a5f5;
+  font-family: 'Courier New', monospace;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 0.8rem 1.2rem;
+  border-radius: 6px;
+  border-left: 4px solid #1a73e8;
+  margin-top: 0.4rem;
+}
+
+/* ── Lista de conclusión ── */
+.conclusion-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 0.4rem;
+}
+
+.conclusion-list li {
+  font-size: 0.85rem;
+  color: #444;
+  line-height: 1.6;
+  padding-left: 1.2rem;
+  position: relative;
+  text-align: justify;
+}
+
+.conclusion-list li::before {
+  content: '▸';
+  color: #1a73e8;
+  position: absolute;
+  left: 0;
+  font-size: 0.75rem;
+  top: 0.15rem;
+}
+
+/* ══════════════════════════════════════════
+   TABLAS DE VERDAD
+══════════════════════════════════════════ */
+
+.gates-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.2rem;
+  width: 100%;
+}
+
+.gate-card {
+  background: #f8faff;
+  border: 1px solid #dce8ff;
+  border-radius: 8px;
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.gate-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #0d1117;
+  text-align: center;
+}
+
+.gate-title span {
+  color: #1a73e8;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.gate-desc {
+  font-size: 0.72rem;
+  color: #666;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* Celdas de salida coloreadas */
+.out-1 {
+  background: #e6f4ea;
+  color: #1e7e34;
+  font-weight: 700;
+}
+
+.out-0 {
+  background: #fce8e8;
+  color: #c0392b;
+  font-weight: 700;
+}
+
+/* ── Expresión booleana ── */
+.boolean-expr {
+  font-family: 'Times New Roman', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  color: #0d1117;
+  padding: 1rem 1.5rem;
+  background: #f4f8ff;
+  border: 1px solid #dce8ff;
+  border-radius: 8px;
+  letter-spacing: 1px;
+}
+
+/* Barra de negación encima de la letra */
+.boolean-expr .ov {
+  text-decoration: overline;
+  font-style: italic;
+}
+
+/* ── Barra negación en encabezados de tabla ── */
+.ov-th {
+  text-decoration: overline;
+  font-style: italic;
+}
+
+/* ── Resumen resultado final ── */
+.result-summary {
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  color: #444;
+  text-align: right;
+}
+
+.binary-inline {
+  font-family: 'Courier New', monospace;
+  font-weight: 700;
+  color: #1a73e8;
+  background: #f0f6ff;
+  padding: 0.1rem 0.5rem;
+  border-radius: 4px;
+}
+
+/* ── Paso a paso ── */
+.step-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+  margin-top: 0.4rem;
+}
+
+.step-card {
+  background: #f8faff;
+  border: 1px solid #dce8ff;
+  border-radius: 6px;
+  padding: 0.6rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.step-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #1a73e8;
+  border-bottom: 1px solid #dce8ff;
+  padding-bottom: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.step-line {
+  font-family: 'Times New Roman', serif;
+  font-size: 0.78rem;
+  font-style: italic;
+  color: #333;
+}
+
+.step-line .ov {
+  text-decoration: overline;
+}
+
+.step-result {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 0.3rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.step-result.out-1 {
+  background: #e6f4ea;
+  color: #1e7e34;
+}
+
+.step-result.out-0 {
+  background: #fce8e8;
+  color: #c0392b;
+}
+
+/* ── Bloque de resolución ── */
+.resolution-block {
+  background: #f8faff;
+  border: 1px solid #dce8ff;
+  border-radius: 6px;
+  padding: 0.7rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.res-line {
+  font-family: 'Times New Roman', serif;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #333;
+}
+
+.res-line .ov {
+  text-decoration: overline;
+}
+
+.res-result {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #0d1117;
+  margin-top: 0.3rem;
+  padding-top: 0.3rem;
+  border-top: 1px solid #dce8ff;
+}
+
+/* ── Imagen esquema ── */
+.schema-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 1rem 0;
+}
+
+.schema-img {
+  max-width: 100%;
+  max-height: 20cm;
+  object-fit: contain;
+  border: 1px solid #dce8ff;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+/* ══════════════════════════════════════════
+   DIAGRAMA CAMBIO DE CONTEXTO
+══════════════════════════════════════════ */
+
+.context-diagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.8rem;
+  padding: 1rem;
+  background: #f8faff;
+  border: 1px solid #dce8ff;
+  border-radius: 8px;
+}
+
+.proc-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  min-height: 80px;
+  border-radius: 8px;
+  padding: 0.6rem;
+  text-align: center;
+}
+
+.proc-a { background: #1a73e8; color: #fff; }
+.proc-b { background: #0d47a1; color: #fff; }
+
+.proc-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.proc-state {
+  font-size: 0.7rem;
+  margin-top: 0.2rem;
+  opacity: 0.9;
+}
+
+.arrow-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  flex: 1;
+}
+
+.arrow-step {
+  font-size: 0.7rem;
+  color: #1a73e8;
+  font-weight: 600;
+  text-align: center;
+}
+
+.arrow-down {
+  font-size: 1.2rem;
+  color: #1a73e8;
+  line-height: 1;
+}
+
+.pcb-box {
+  background: #fff;
+  border: 1px solid #1a73e8;
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  text-align: center;
+  width: 100%;
+}
+
+.pcb-title {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #1a73e8;
+}
+
+.pcb-item {
+  font-size: 0.68rem;
+  color: #444;
+  font-family: 'Courier New', monospace;
+  margin-top: 0.15rem;
+}
+
+/* ── Tabla Intel (columnas anchas) ── */
+.intel-table {
+  font-size: 0.65rem;
+}
+
+.intel-table th,
+.intel-table td {
+  padding: 0.25rem 0.4rem;
+}
