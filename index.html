@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carátula – Arquitectura de la Computación</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="page">
+
+    <!-- ENCABEZADO -->
+    <div class="header">
+      <img src="LOGO.png" alt="Logo" class="logo" />
+      <p class="university">Universidad Blas Pascal</p>
+      <p class="faculty">Universidad Blas Pascal</p>
+    </div>
+
+    <!-- CUERPO -->
+    <div class="body">
+
+      <span class="subject-tag">Evaluación Parcial Nº 1</span>
+
+      <h1 class="title">
+        ARQUITECTURA DE<br />
+        <span>COMPUTADORAS I </span>
+      </h1>
+
+      <p class="subtitle">
+        Análisis de la arquitectura interna de un sistema computacional:
+        CPU, memoria, bus de datos y unidades de entrada/salida.
+      </p>
+
+      <div class="divider"></div>
+
+      <div class="info-grid">
+        <div class="info-item">
+          <label>Alumno/a</label>
+          <span>Andrada Juan Pablo</span>
+        </div>
+        <div class="info-item">
+          <label>Docente</label>
+          <span>FUNES, GUSTAVO ADOLFO</span>
+        </div>
+        <div class="info-item">
+          <label>Comisión</label>
+          <span> virtual</span>
+        </div>
+        <div class="info-item">
+          <label>Materia</label>
+          <span>ARQUITECTURA DE COMPUTADORAS I</span>
+        </div>
+        <div class="info-item">
+          <label>Fecha limite de  entrega</label>
+          <span> 31/07/2026</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- PIE -->
+    <div class="footer">
+      <span>Ciclo lectivo 2026</span>
+      <span>Arquitectura de la Computación</span>
+      <span>Página 1</span>
+    </div>
+
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       PÁGINA 2 – NOMBRE EN BINARIO ASCII
+  ══════════════════════════════════════════ -->
+  <div class="page page-content">
+
+    <div class="header">
+      <img src="LOGO.png" alt="Logo" class="logo" />
+      <p class="university">Universidad Blas Pascal</p>
+      <p class="faculty">Arquitectura de Computadoras I</p>
+    </div>
+
+    <div class="content-body">
+
+      <h2 class="page-title">Nombre en <span>Binario ASCII</span></h2>
+
+      <!-- NOMBRE -->
+      <div class="ascii-section">
+        <h3 class="section-heading">Nombre de pila: Juan</h3>
+        <p class="page-desc">
+          Buscamos el código decimal de cada letra (teniendo en cuenta que mayúsculas y minúsculas tienen códigos distintos):
+        </p>
+      </div>
+
+      <!-- CONSULTA DE TABLA ASCII -->
+      <div class="ascii-section">
+        <h3 class="section-heading">Consulta de la tabla ASCII</h3>
+        <table class="ascii-table">
+          <thead>
+            <tr><th>Letra</th><th>ASCII decimal</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>J</td><td>74</td></tr>
+            <tr><td>u</td><td>117</td></tr>
+            <tr><td>a</td><td>97</td></tr>
+            <tr><td>n</td><td>110</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- CONVERSIÓN A BINARIO -->
+      <div class="ascii-section">
+        <h3 class="section-heading">Conversión a binario</h3>
+        <table class="ascii-table">
+          <thead>
+            <tr><th>ASCII decimal</th><th>Binario</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>74</td><td>01001010</td></tr>
+            <tr><td>117</td><td>01110101</td></tr>
+            <tr><td>97</td><td>01100001</td></tr>
+            <tr><td>110</td><td>01101110</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- COMPILACIÓN -->
+      <div class="ascii-section">
+        <h3 class="section-heading">Compilación de códigos</h3>
+        <p class="page-desc">El nombre en binario queda representado de la siguiente manera:</p>
+        <div class="binary-result">
+          01001010 &nbsp; 01110101 &nbsp; 01100001 &nbsp; 01101110
+        </div>
+      </div>
+
+      <!-- CONCLUSIÓN -->
+      <div class="ascii-section">
+        <h3 class="section-heading">Conclusión</h3>
+        <p class="page-desc">
+          Al codificar nuestro nombre en binario utilizando el código ASCII, podemos observar que:
+        </p>
+        <ul class="conclusion-list">
+          <li>Cada letra se representa mediante un número, que luego se convierte en una secuencia de bits (0 y 1).</li>
+          <li>Las computadoras no interpretan letras como los humanos, sino que trabajan exclusivamente con datos en formato binario.</li>
+          <li>Este proceso demuestra cómo la información alfanumérica se transforma en señales eléctricas o datos digitales que la máquina puede procesar.</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span>Ciclo lectivo 2026</span>
+      <span>Arquitectura de la Computación</span>
+      <span>Página 2</span>
+    </div>
+
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       PÁGINA 3 – TABLAS DE VERDAD
+  ══════════════════════════════════════════ -->
+  <div class="page page-content">
+
+    <div class="header">
+      <img src="LOGO.png" alt="Logo" class="logo" />
+      <p class="university">Universidad Blas Pascal</p>
+      <p class="faculty">Arquitectura de Computadoras I</p>
+    </div>
+
+    <div class="content-body">
+
+      <h2 class="page-title">Tablas de <span>Verdad</span></h2>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">Expresión Booleana</h3>
+        <div class="boolean-expr">
+          F(L1) = <span class="ov">A</span><span class="ov">B</span>C + <span class="ov">A</span>B<span class="ov">C</span> + <span class="ov">A</span>&thinsp;B&thinsp;C + A<span class="ov">B</span>&thinsp;<span class="ov">C</span>
+        </div>
+      </div>
+
+      <!-- RESOLUCIÓN F(L1) -->
+      <div class="ascii-section">
+        <h3 class="section-heading">Resolución de F(L1)</h3>
+        <div class="resolution-block">
+          <p class="res-line"><span class="ov">A</span><span class="ov">B</span>C &rarr; (0,0,1)</p>
+          <p class="res-line"><span class="ov">A</span>B<span class="ov">C</span> &rarr; (0,1,0)</p>
+          <p class="res-line"><span class="ov">A</span>BC &rarr; (0,1,1)</p>
+          <p class="res-line">A<span class="ov">B</span><span class="ov">C</span> &rarr; (1,0,0)</p>
+          <p class="res-result">Por lo tanto: F(L1) = <span class="binary-inline">0, 1, 1, 1, 1, 0, 0, 0</span></p>
+        </div>
+      </div>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">Expresión Booleana</h3>
+        <div class="boolean-expr">
+          F(L2) = <span class="ov">A</span><span class="ov">B</span><span class="ov">C</span> + <span class="ov">A</span>BC + A<span class="ov">B</span>&thinsp;<span class="ov">C</span> + ABC
+        </div>
+      </div>
+
+      <!-- RESOLUCIÓN F(L2) -->
+      <div class="ascii-section">
+        <h3 class="section-heading">Resolución de F(L2)</h3>
+        <div class="resolution-block">
+          <p class="res-line"><span class="ov">A</span><span class="ov">B</span><span class="ov">C</span> &rarr; (0,0,0)</p>
+          <p class="res-line"><span class="ov">A</span>BC &rarr; (0,1,1)</p>
+          <p class="res-line">A<span class="ov">B</span><span class="ov">C</span> &rarr; (1,0,0)</p>
+          <p class="res-line">ABC &rarr; (1,1,1)</p>
+          <p class="res-result">Por lo tanto: F(L2) = <span class="binary-inline">1, 0, 0, 1, 1, 0, 0, 1</span></p>
+        </div>
+      </div>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">Expresión Booleana</h3>
+        <div class="boolean-expr">
+          F(L3) = <span class="ov">A</span>&thinsp;<span class="ov">B</span><span class="ov">C</span> + <span class="ov">A</span>B<span class="ov">C</span> + A<span class="ov">B</span><span class="ov">C</span> + AB<span class="ov">C</span>
+        </div>
+      </div>
+
+      <!-- RESOLUCIÓN F(L3) -->
+      <div class="ascii-section">
+        <h3 class="section-heading">Resolución de F(L3)</h3>
+        <div class="resolution-block">
+          <p class="res-line"><span class="ov">A</span><span class="ov">B</span><span class="ov">C</span> &rarr; (0,0,0)</p>
+          <p class="res-line"><span class="ov">A</span>B<span class="ov">C</span> &rarr; (0,1,0)</p>
+          <p class="res-line">A<span class="ov">B</span><span class="ov">C</span> &rarr; (1,0,0)</p>
+          <p class="res-line">AB<span class="ov">C</span> &rarr; (1,1,0)</p>
+          <p class="res-result">Por lo tanto: F(L3) = <span class="binary-inline">1, 0, 1, 0, 1, 0, 1, 0</span></p>
+        </div>
+      </div>
+
+      <!-- TABLA FINAL -->
+      <div class="ascii-section">
+        <h3 class="section-heading">Tabla Final</h3>
+        <table class="ascii-table">
+          <thead>
+            <tr><th>A</th><th>B</th><th>C</th><th>F(L1)</th><th>F(L2)</th><th>F(L3)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>0</td><td>0</td><td>0</td><td class="out-0">0</td><td class="out-1">1</td><td class="out-1">1</td></tr>
+            <tr><td>0</td><td>0</td><td>1</td><td class="out-1">1</td><td class="out-0">0</td><td class="out-0">0</td></tr>
+            <tr><td>0</td><td>1</td><td>0</td><td class="out-1">1</td><td class="out-0">0</td><td class="out-1">1</td></tr>
+            <tr><td>0</td><td>1</td><td>1</td><td class="out-1">1</td><td class="out-1">1</td><td class="out-0">0</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td><td class="out-1">1</td><td class="out-1">1</td><td class="out-1">1</td></tr>
+            <tr><td>1</td><td>0</td><td>1</td><td class="out-0">0</td><td class="out-0">0</td><td class="out-0">0</td></tr>
+            <tr><td>1</td><td>1</td><td>0</td><td class="out-0">0</td><td class="out-0">0</td><td class="out-1">1</td></tr>
+            <tr><td>1</td><td>1</td><td>1</td><td class="out-0">0</td><td class="out-1">1</td><td class="out-0">0</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span>Ciclo lectivo 2026</span>
+      <span>Arquitectura de la Computación</span>
+      <span>Página 3</span>
+    </div>
+
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       PÁGINA 4 – ESQUEMA DE RED
+  ══════════════════════════════════════════ -->
+  <div class="page page-content">
+
+    <div class="header">
+      <img src="LOGO.png" alt="Logo" class="logo" />
+      <p class="university">Universidad Blas Pascal</p>
+      <p class="faculty">Arquitectura de Computadoras I</p>
+    </div>
+
+    <div class="content-body">
+
+      <h2 class="page-title">Diseño de un Esquema de Red para un<br /><span>Lugar de Trabajo Típico</span></h2>
+
+      <div class="schema-container">
+        <img src="ESQUEMA.png" alt="Esquema de Red" class="schema-img" />
+      </div>
+
+      <p class="page-desc">
+        El diagrama representa una infraestructura de red empresarial segmentada mediante VLAN (Virtual Local Area Network), diseñada para mejorar la seguridad, el rendimiento y la administración de los recursos.
+      </p>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">Segmentación por VLAN</h3>
+        <p class="page-desc">Cada departamento (Administración, Investigación y Desarrollo, Soporte Técnico y Logística) opera en una VLAN independiente (VLAN 10, 20, 30 y 40). Esto reduce el dominio de broadcast, optimiza el tráfico y restringe el acceso entre áreas según las políticas de seguridad.</p>
+      </div>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">Capa de Acceso</h3>
+        <p class="page-desc">Los dispositivos finales (PC, teléfonos IP, impresoras y equipos de laboratorio) se conectan a switches de acceso, que proporcionan conectividad a la red local y transportan las VLAN correspondientes.</p>
+      </div>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">Switch Central y Núcleo de Red</h3>
+        <p class="page-desc">Todos los switches de acceso convergen en un switch central conectado al núcleo de red de alta disponibilidad, encargado de realizar la conmutación de alto rendimiento y garantizar la continuidad del servicio ante fallos.</p>
+      </div>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">Red Inalámbrica Corporativa</h3>
+        <p class="page-desc">La infraestructura WLAN está administrada por una controladora inalámbrica (WLC) que gestiona múltiples puntos de acceso (AP). Además, existe una red de invitados completamente aislada de la red corporativa para proteger los recursos internos.</p>
+      </div>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">Servicios Compartidos</h3>
+        <p class="page-desc">El sistema incluye un servidor de impresión centralizado que administra las impresoras de red, facilitando el control y la distribución de trabajos de impresión.</p>
+      </div>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">DMZ (Zona Desmilitarizada)</h3>
+        <p class="page-desc">Los servicios expuestos a Internet, como servidores web, correo electrónico y VPN, se ubican en una DMZ protegida por un balanceador de carga. Esta separación minimiza el riesgo de acceso directo a la red interna.</p>
+      </div>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">Seguridad Perimetral</h3>
+        <p class="page-desc">La salida hacia Internet está protegida mediante cortafuegos de próxima generación (NGFW) en alta disponibilidad, que implementan filtrado de tráfico, inspección de aplicaciones, prevención de amenazas y control de accesos.</p>
+      </div>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">Conectividad WAN y Nube</h3>
+        <p class="page-desc">La empresa dispone de dos proveedores de Internet (ISP) para garantizar redundancia y continuidad operativa. También integra servicios en la nube (como plataformas SaaS y almacenamiento) y un sistema de copias de seguridad para asegurar la disponibilidad y recuperación de los datos.</p>
+      </div>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">Conclusión</h3>
+        <p class="page-desc">En conjunto, esta arquitectura sigue un diseño jerárquico y segmentado que combina alta disponibilidad, redundancia, seguridad perimetral y administración centralizada de los servicios de red.</p>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span>Ciclo lectivo 2026</span>
+      <span>Arquitectura de la Computación</span>
+      <span>Página 4</span>
+    </div>
+
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       PÁGINA 5 – VOLTAJES Y CONSUMO
+  ══════════════════════════════════════════ -->
+  <div class="page page-content">
+
+    <div class="header">
+      <img src="LOGO.png" alt="Logo" class="logo" />
+      <p class="university">Universidad Blas Pascal</p>
+      <p class="faculty">Arquitectura de Computadoras I</p>
+    </div>
+
+    <div class="content-body">
+
+      <h2 class="page-title">Investigación sobre Voltajes y Consumo de<br /><span>Energía en una Computadora Típica</span></h2>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">Fundamentos eléctricos básicos</h3>
+        <p class="page-desc">Para comprender el consumo energético de una computadora es necesario considerar tres magnitudes fundamentales: el voltaje, la corriente y la potencia. El voltaje representa la diferencia de potencial eléctrico, la corriente es el flujo de electrones y la potencia indica la cantidad de energía consumida por unidad de tiempo.</p>
+        <div class="boolean-expr" style="font-size:1.1rem; margin: 0.5rem 0;">P = V × I</div>
+        <p class="page-desc">Donde la potencia (P) se mide en watts, el voltaje (V) en volts y la corriente (I) en amperios. En los hogares la energía se suministra en corriente alterna (CA) a 220V (Argentina), pero los componentes internos requieren corriente continua (CC), por lo que es necesario un proceso de conversión.</p>
+      </div>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">Fuente de Alimentación y Distribución de Energía</h3>
+        <p class="page-desc">La fuente de alimentación (PSU) transforma la corriente alterna en corriente continua y la distribuye en distintos niveles de voltaje: +12V, +5V y +3.3V. La línea de 12V es la más importante, ya que alimenta la CPU y la GPU. Las líneas de 5V y 3.3V se destinan a la RAM y circuitos de la placa base. Una fuente con certificación 80 Plus garantiza mayor eficiencia, reduciendo pérdidas en forma de calor.</p>
+      </div>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">Regulación de Voltaje</h3>
+        <p class="page-desc">Los componentes utilizan sistemas de regulación de voltaje (VRM) que reducen y estabilizan la energía. Por ejemplo, el procesador puede funcionar con valores cercanos a 1.2V a pesar de recibir energía desde la línea de 12V. Este proceso es fundamental para garantizar la estabilidad y evitar daños en componentes sensibles.</p>
+      </div>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">Consumo Energético de los Componentes Internos</h3>
+        <table class="ascii-table">
+          <thead>
+            <tr><th>Componente</th><th>Consumo típico</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Procesador (CPU)</td><td>35W – 125W+</td></tr>
+            <tr><td>Tarjeta gráfica (GPU)</td><td>200W – 350W</td></tr>
+            <tr><td>Memoria RAM (por módulo)</td><td>2W – 5W</td></tr>
+            <tr><td>Disco duro mecánico (HDD)</td><td>6W – 10W</td></tr>
+            <tr><td>Unidad de estado sólido (SSD)</td><td>hasta 5W</td></tr>
+            <tr><td>Placa madre</td><td>30W – 80W</td></tr>
+            <tr><td>Ventiladores</td><td>1W – 5W c/u</td></tr>
+            <tr><td>Refrigeración líquida</td><td>10W – 20W</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">Consumo Energético de Periféricos</h3>
+        <table class="ascii-table">
+          <thead>
+            <tr><th>Periférico</th><th>Consumo típico</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Monitor</td><td>20W – 100W</td></tr>
+            <tr><td>Teclado y mouse</td><td>menos de 5W</td></tr>
+            <tr><td>Impresora (pico)</td><td>hasta 300W</td></tr>
+            <tr><td>Parlantes, router, cámara web</td><td>variable (bajo)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span>Ciclo lectivo 2026</span>
+      <span>Arquitectura de la Computación</span>
+      <span>Página 5</span>
+    </div>
+
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       PÁGINA 6 – VOLTAJES Y CONSUMO (cont.)
+  ══════════════════════════════════════════ -->
+  <div class="page page-content">
+
+    <div class="header">
+      <img src="LOGO.png" alt="Logo" class="logo" />
+      <p class="university">Universidad Blas Pascal</p>
+      <p class="faculty">Arquitectura de Computadoras I</p>
+    </div>
+
+    <div class="content-body">
+
+      <h2 class="page-title">Voltajes y Consumo de Energía <span>(continuación)</span></h2>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">Evaluación del Consumo Total</h3>
+        <table class="ascii-table">
+          <thead>
+            <tr><th>Tipo de uso</th><th>Consumo estimado</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Oficina / estudio</td><td>150W – 250W</td></tr>
+            <tr><td>Edición multimedia / multitarea</td><td>300W – 500W</td></tr>
+            <tr><td>Alto rendimiento (gaming / diseño)</td><td>700W+</td></tr>
+            <tr><td>Sistema completo con periféricos</td><td>hasta ~800W</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">Consumo Energético en el Tiempo</h3>
+        <div class="boolean-expr" style="font-size:1.1rem; margin: 0.5rem 0;">E (kWh) = P (kW) × t (h)</div>
+        <p class="page-desc">Por ejemplo, una computadora que consume 400W usada 5 horas diarias genera un consumo mensual aproximado de 60 kWh.</p>
+      </div>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">Problemas Eléctricos y sus Consecuencias</h3>
+        <p class="page-desc">Las computadoras están expuestas a cortes de energía, caídas de tensión, sobretensiones y ruido eléctrico. Estas situaciones pueden provocar daños en componentes, pérdida de información o fallos en el sistema operativo. Por ello es fundamental contar con mecanismos de protección que garanticen la estabilidad del suministro eléctrico.</p>
+      </div>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">Sistema de Alimentación Ininterrumpida (UPS)</h3>
+        <p class="page-desc">Un UPS permite mantener el funcionamiento del equipo durante interrupciones del suministro eléctrico y protegerlo frente a variaciones de tensión. Los más recomendados son los de tipo <em>line-interactive</em>, por su equilibrio entre costo y protección.</p>
+        <table class="ascii-table" style="margin-top:0.5rem;">
+          <thead>
+            <tr><th>Uso</th><th>Capacidad recomendada</th><th>Autonomía aprox.</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Computadora típica</td><td>1000VA (~600W)</td><td>5 – 15 min</td></tr>
+            <tr><td>Sistema de mayor consumo</td><td>1500VA+</td><td>5 – 15 min</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">Buenas Prácticas y Eficiencia Energética</h3>
+        <ul class="conclusion-list">
+          <li>Usar fuentes de alimentación con certificación 80 Plus para minimizar pérdidas.</li>
+          <li>Garantizar una correcta ventilación del sistema para evitar sobrecalentamiento.</li>
+          <li>Desconectar equipos en desuso para reducir el consumo en modo standby.</li>
+          <li>Elegir componentes eficientes para reducir tanto el gasto eléctrico como el impacto ambiental.</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span>Ciclo lectivo 2026</span>
+      <span>Arquitectura de la Computación</span>
+      <span>Página 6</span>
+    </div>
+
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       PÁGINA 7 – EVOLUCIÓN DE UN SO
+  ══════════════════════════════════════════ -->
+  <div class="page page-content">
+
+    <div class="header">
+      <img src="LOGO.png" alt="Logo" class="logo" />
+      <p class="university">Universidad Blas Pascal</p>
+      <p class="faculty">Arquitectura de Computadoras I</p>
+    </div>
+
+    <div class="content-body">
+
+      <h2 class="page-title">Evolución de un <span>Sistema Operativo</span></h2>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">Introducción al Ecosistema Windows</h3>
+        <p class="page-desc">La historia de la computación personal está indisolublemente ligada a la evolución de Microsoft Windows, un sistema operativo que ha trascendido su función original como shell gráfica para convertirse en la infraestructura digital predominante a nivel global. Con una cuota de mercado que en marzo de 2026 se sitúa por encima del 76% en el segmento de escritorio, Windows representa el estándar de facto para la productividad empresarial, el desarrollo de software y el entretenimiento digital.</p>
+        <p class="page-desc" style="margin-top:0.5rem;">El análisis de Windows no es meramente el estudio de una pieza de software, sino la observación de una metamorfosis arquitectónica. Desde sus cimientos en MS-DOS hasta la integración contemporánea de modelos de inteligencia artificial generativa, el sistema ha navegado por transiciones críticas: el paso de los 16 a los 32 y 64 bits, la unificación de los núcleos de consumo y empresariales, y la migración hacia un modelo de "Windows como Servicio".</p>
+      </div>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">Arqueología del Software: De MS-DOS a Interface Manager</h3>
+        <p class="page-desc">El precursor fundamental fue MS-DOS (Microsoft Disk Operating System), cuya versión 1.0 fue lanzada en agosto de 1981. Microsoft licenció QDOS/86 como base para crear el sistema operativo que IBM incluiría en sus primeras computadoras personales. Era un sistema de línea de comandos sin interfaz gráfica nativa. El proceso de arranque dependía del sector de arranque, archivos IO.SYS y los configuradores CONFIG.SYS y AUTOEXEC.BAT.</p>
+      </div>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">1. Era de los Sistemas Basados en Texto (1981 – 1984)</h3>
+        <table class="ascii-table">
+          <thead><tr><th>Año</th><th>Versión</th><th>Hitos principales</th></tr></thead>
+          <tbody>
+            <tr><td>1981</td><td>MS-DOS 1.0</td><td>Lanzamiento para IBM PC. Línea de comandos, sin interfaz gráfica. Basado en QDOS/86. Máx. 128 KB de RAM.</td></tr>
+            <tr><td>1983</td><td>MS-DOS 2.0</td><td>Soporte para discos duros y subdirectorios. Límite ampliado a 640 KB de RAM.</td></tr>
+            <tr><td>1984</td><td>MS-DOS 3.0</td><td>Soporte para redes y discos de 1.2 MB. Mantiene el límite de 640 KB de RAM.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">2. Génesis de la Interfaz Gráfica — Línea de Consumo (1985 – 1994)</h3>
+        <table class="ascii-table">
+          <thead><tr><th>Año</th><th>Versión</th><th>Hitos principales</th></tr></thead>
+          <tbody>
+            <tr><td>1985</td><td>Windows 1.0</td><td>Shell gráfica sobre MS-DOS. Mouse, 256 colores, Panel de Control, Paint y Write. Ventanas en mosaico obligatorio por litigio con Apple.</td></tr>
+            <tr><td>1987</td><td>Windows 2.0</td><td>Procesadores 286/386: solapamiento de ventanas e iconos en escritorio.</td></tr>
+            <tr><td>1988</td><td>—</td><td>Morris Worm infecta el 10% de Internet. Primeras vulnerabilidades masivas.</td></tr>
+            <tr><td>1990</td><td>Windows 3.0</td><td>Primer éxito comercial masivo. Modo Protegido: rompe la barrera de 640 KB. Memoria virtual.</td></tr>
+            <tr><td>1991</td><td>MS-DOS 5.0</td><td>Carga de controladores en memoria alta (UMA).</td></tr>
+            <tr><td>1992</td><td>Windows 3.1 "Janus"</td><td>Estabilidad, soporte multimedia y fuentes TrueType. Estandariza la GUI.</td></tr>
+            <tr><td>1993</td><td>Windows 3.2</td><td>Soporte para chino simplificado. Apertura al mercado asiático.</td></tr>
+            <tr><td>1994</td><td>MS-DOS 6.22</td><td>Última versión independiente. Tecnología de compresión de disco.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">3. Nacimiento de la Arquitectura Empresarial NT (1993 – 1996)</h3>
+        <table class="ascii-table">
+          <thead><tr><th>Año</th><th>Versión</th><th>Hitos principales</th></tr></thead>
+          <tbody>
+            <tr><td>1993</td><td>Windows NT 3.1 "Razzle"</td><td>Sistema de 32 bits puro (Dave Cutler). Kernel híbrido, HAL, NTFS, aislamiento de procesos, API Win32.</td></tr>
+            <tr><td>1994</td><td>Windows NT 3.5 "Daytona"</td><td>Optimización de red y mayor estabilidad.</td></tr>
+            <tr><td>1996</td><td>Windows NT 4.0 "Cairo"</td><td>Adopta la interfaz visual de Windows 95 sobre el núcleo NT empresarial.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">4. Revolución Híbrida del Consumidor — Familia 9x (1995 – 2000)</h3>
+        <table class="ascii-table">
+          <thead><tr><th>Año</th><th>Versión</th><th>Hitos principales</th></tr></thead>
+          <tbody>
+            <tr><td>1995</td><td>Windows 95</td><td>Menú Inicio, Barra de Tareas, accesos directos. Híbrido 16/32 bits sobre MS-DOS. Plug and Play. Primeras BSOD.</td></tr>
+            <tr><td>1998</td><td>Windows 98</td><td>IE integrado en el explorador (litigios antimonopolio). Soporte USB, WDM, hibernación.</td></tr>
+            <tr><td>1999</td><td>—</td><td>Virus Melissa: ataque masivo global.</td></tr>
+            <tr><td>2000</td><td>Windows Me</td><td>Fin de la familia 9x. Muy criticado por inestabilidad. Virus ILOVEYOU azota sistemas globales.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span>Ciclo lectivo 2026</span>
+      <span>Arquitectura de la Computación</span>
+      <span>Página 7</span>
+    </div>
+
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       PÁGINA 8 – EVOLUCIÓN WINDOWS (XP → W11)
+  ══════════════════════════════════════════ -->
+  <div class="page page-content">
+
+    <div class="header">
+      <img src="LOGO.png" alt="Logo" class="logo" />
+      <p class="university">Universidad Blas Pascal</p>
+      <p class="faculty">Arquitectura de Computadoras I</p>
+    </div>
+
+    <div class="content-body">
+
+      <h2 class="page-title">Evolución de Windows <span>— Línea de Tiempo (cont.)</span></h2>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">5. Convergencia de Núcleos y Madurez Visual (2000 – 2009)</h3>
+        <table class="ascii-table">
+          <thead><tr><th>Año</th><th>Versión</th><th>Hitos principales</th></tr></thead>
+          <tbody>
+            <tr><td>2000</td><td>Windows 2000 (NT 5.0)</td><td>Sistema corporativo estable. Active Directory. Plug and Play.</td></tr>
+            <tr><td>2001</td><td>Windows XP "Whistler"</td><td>Elimina núcleo basado en DOS. Interfaz "Luna". Ediciones: Home, Professional, Media Center, Tablet PC, x64.</td></tr>
+            <tr><td>2002</td><td>—</td><td>Memorándum "Trustworthy Computing" de Bill Gates. Prioridad total a la seguridad del código.</td></tr>
+            <tr><td>2004</td><td>XP Service Pack 2</td><td>Gran actualización de seguridad fruto del memorándum.</td></tr>
+            <tr><td>2006/07</td><td>Windows Vista "Longhorn"</td><td>Interfaz Aero (cristal y profundidad). Alto requerimiento de hardware. UAC, BitLocker, Windows Defender.</td></tr>
+            <tr><td>2009</td><td>Windows 7</td><td>"Vista bien hecho". Mejor rendimiento, arranque más rápido, UAC suavizado. Aero Snap y Jump Lists.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">6. Era Táctil y Cambio de Paradigma (2012 – 2014)</h3>
+        <table class="ascii-table">
+          <thead><tr><th>Año</th><th>Versión</th><th>Hitos principales</th></tr></thead>
+          <tbody>
+            <tr><td>2012</td><td>Windows 8</td><td>Elimina el Menú Inicio por "Metro UI". Windows Store y apps WinRT. Fast Boot. Nuevo logo monocromático.</td></tr>
+            <tr><td>2013</td><td>Windows 8.1</td><td>Devuelve el botón Inicio. Permite arrancar directamente al escritorio clásico.</td></tr>
+            <tr><td>2014</td><td>—</td><td>Fin del soporte técnico extendido de Windows XP (13 años de vigencia).</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">7. Windows como Servicio (2015 – 2023)</h3>
+        <table class="ascii-table">
+          <thead><tr><th>Año</th><th>Versión / Evento</th><th>Hitos principales</th></tr></thead>
+          <tbody>
+            <tr><td>2015</td><td>Windows 10 (v1507)</td><td>Modelo "Windows como Servicio". Fusiona menú clásico con mosaicos. Windows Hello, Cortana, Edge, VBS.</td></tr>
+            <tr><td>2016</td><td>W10 v1607 Anniversary</td><td>Windows Ink y extensiones para Edge.</td></tr>
+            <tr><td>2017</td><td>WannaCry / v1709</td><td>Ransomware global explota EternalBlue. Respuesta: seguridad por hardware. Fluent Design System.</td></tr>
+            <tr><td>2018</td><td>—</td><td>Windows 10 supera a Windows 7 en cuota de mercado global.</td></tr>
+            <tr><td>2019</td><td>W10 v1903</td><td>Tema claro y Windows Sandbox.</td></tr>
+            <tr><td>2021</td><td>Windows 11</td><td>Diseño "Mica", menú centrado, esquinas redondeadas. Requisito obligatorio: TPM 2.0 + CPU 8.ª gen.</td></tr>
+            <tr><td>2022</td><td>W10 v22H2</td><td>Última actualización estable de Windows 10 antes de su fin de soporte.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">8. El Presente hacia la Inteligencia Artificial (2024 – 2026+)</h3>
+        <table class="ascii-table">
+          <thead><tr><th>Año</th><th>Evento</th><th>Hitos principales</th></tr></thead>
+          <tbody>
+            <tr><td>2024–25</td><td>Copilot+ PCs</td><td>Arquitectura IA con NPU. Herramientas Recall &amp; Click to Do (búsqueda semántica local).</td></tr>
+            <tr><td>2025</td><td>Fin soporte W10</td><td>Fin del soporte técnico regular. Introducción de GPT-5.4 Thinking en Copilot Chat.</td></tr>
+            <tr><td>2026</td><td>Copilot Wave 3</td><td>Windows domina el 76% del escritorio global. Agentes autónomos nativos en Windows y Office.</td></tr>
+            <tr><td>2026+</td><td>Agent 365 (proyección)</td><td>Agentes IA empresariales. SO "invisible" con gestión semántica y predictiva. Límites difusos entre hardware local y nube Azure.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span>Ciclo lectivo 2026</span>
+      <span>Arquitectura de la Computación</span>
+      <span>Página 8</span>
+    </div>
+
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       PÁGINA 9 – TIPOS DE SISTEMA DE ARCHIVOS
+  ══════════════════════════════════════════ -->
+  <div class="page page-content">
+
+    <div class="header">
+      <img src="LOGO.png" alt="Logo" class="logo" />
+      <p class="university">Universidad Blas Pascal</p>
+      <p class="faculty">Arquitectura de Computadoras I</p>
+    </div>
+
+    <div class="content-body">
+
+      <h2 class="page-title">Tipos de Sistema de Archivos en<br /><span>Sistemas Operativos Principales</span></h2>
+
+      <p class="page-desc">El sistema de archivos representa uno de los pilares fundamentales en la arquitectura de cualquier sistema operativo. Su función trasciende la mera organización de datos; actúa como la capa de abstracción que media entre las aplicaciones lógicas y el hardware físico de almacenamiento. Un sistema de archivos eficiente debe gestionar la asignación de espacio, garantizar la integridad de los datos, facilitar mecanismos de recuperación ante fallos y optimizar el rendimiento según el medio de almacenamiento (HDD o SSD).</p>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">Microsoft Windows</h3>
+        <table class="ascii-table">
+          <thead>
+            <tr><th>Sistema de Archivos</th><th>Características</th><th>Ventajas</th><th>Usos Comunes</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>NTFS</strong></td>
+              <td>Journaling de metadatos, Master File Table (MFT), ACLs y cifrado EFS.</td>
+              <td>Alta seguridad, recuperación automática ante fallos, manejo de grandes volúmenes.</td>
+              <td>Discos internos, servidores empresariales y estaciones de trabajo Windows.</td>
+            </tr>
+            <tr>
+              <td><strong>FAT32</strong></td>
+              <td>Tabla de asignación simple de 32 bits, sin journaling. Límite de 4 GB por archivo.</td>
+              <td>Compatibilidad universal con casi cualquier dispositivo y SO.</td>
+              <td>Unidades USB pequeñas, tarjetas SD y dispositivos embebidos.</td>
+            </tr>
+            <tr>
+              <td><strong>exFAT</strong></td>
+              <td>Optimizado para memorias flash, elimina el límite de 4 GB de FAT32, sin journaling.</td>
+              <td>Interoperabilidad entre Windows y macOS para archivos de gran tamaño (hasta 16 EB).</td>
+              <td>Discos externos, tarjetas SDXC y memorias USB de alto rendimiento.</td>
+            </tr>
+            <tr>
+              <td><strong>ReFS</strong></td>
+              <td>Arquitectura de resiliencia con checksums, autorreparación y clonado de bloques.</td>
+              <td>Máxima protección contra corrupción de datos, superior en virtualización (VHDX).</td>
+              <td>Servidores de almacenamiento masivo, respaldo y centros de datos empresariales.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">Apple macOS</h3>
+        <table class="ascii-table">
+          <thead>
+            <tr><th>Sistema de Archivos</th><th>Características</th><th>Ventajas</th><th>Usos Comunes</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>APFS</strong></td>
+              <td>Copia en Escritura (CoW), optimizado para SSD, snapshots y compartido de espacio.</td>
+              <td>Duplicación instantánea, cifrado nativo fuerte y gestión dinámica del espacio libre.</td>
+              <td>Unidades de arranque en Macs modernas con SSD (macOS High Sierra en adelante).</td>
+            </tr>
+            <tr>
+              <td><strong>HFS+</strong></td>
+              <td>macOS Extended; journaling de metadatos, optimizado para discos mecánicos.</td>
+              <td>Estabilidad probada en hardware heredado, mejor rendimiento en HDD.</td>
+              <td>Discos duros externos mecánicos y Macs con versiones anteriores a 2017.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span>Ciclo lectivo 2026</span>
+      <span>Arquitectura de la Computación</span>
+      <span>Página 9</span>
+    </div>
+
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       PÁGINA 10 – SISTEMA DE ARCHIVOS LINUX
+  ══════════════════════════════════════════ -->
+  <div class="page page-content">
+
+    <div class="header">
+      <img src="LOGO.png" alt="Logo" class="logo" />
+      <p class="university">Universidad Blas Pascal</p>
+      <p class="faculty">Arquitectura de Computadoras I</p>
+    </div>
+
+    <div class="content-body">
+
+      <h2 class="page-title">Sistemas de Archivos en <span>Linux</span></h2>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">Linux</h3>
+        <table class="ascii-table">
+          <thead>
+            <tr><th>Sistema de Archivos</th><th>Características</th><th>Ventajas</th><th>Usos Comunes</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Ext4</strong></td>
+              <td>Cuarta generación con journaling avanzado, uso de "extents" para reducir fragmentación.</td>
+              <td>Equilibrio óptimo entre velocidad y estabilidad, compatible con casi cualquier distro Linux.</td>
+              <td>PCs, laptops y servidores web Linux estándar.</td>
+            </tr>
+            <tr>
+              <td><strong>XFS</strong></td>
+              <td>Sistema de 64 bits con grupos de asignación independientes para E/S en paralelo.</td>
+              <td>Escalabilidad masiva para archivos gigantes, alto rendimiento en cargas de trabajo pesadas.</td>
+              <td>Servidores de bases de datos, almacenamiento de media y sistemas RHEL / Rocky Linux.</td>
+            </tr>
+            <tr>
+              <td><strong>Btrfs</strong></td>
+              <td>CoW con gestión de volúmenes integrada, snapshots nativos, compresión y RAID por software.</td>
+              <td>Facilita rollbacks del sistema y gestión flexible sin particiones rígidas.</td>
+              <td>NAS domésticos, desarrollo y distribuciones Fedora / openSUSE.</td>
+            </tr>
+            <tr>
+              <td><strong>ZFS</strong></td>
+              <td>Combina sistema de archivos y gestor de volúmenes; checksums de 256 bits y autorreparación.</td>
+              <td>Inmunidad ante corrupción silenciosa de datos, administración simplificada de grandes arreglos.</td>
+              <td>Servidores de almacenamiento profesional, centros de datos y sistemas de máxima seguridad.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">Comparativa Rápida</h3>
+        <table class="ascii-table">
+          <thead>
+            <tr><th>Sistema</th><th>SO</th><th>Journaling</th><th>Snapshots</th><th>Límite archivo</th><th>Ideal para</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>NTFS</td><td>Windows</td><td>✔</td><td>✘</td><td>16 EB</td><td>Escritorio / servidor Windows</td></tr>
+            <tr><td>FAT32</td><td>Universal</td><td>✘</td><td>✘</td><td>4 GB</td><td>Compatibilidad máxima</td></tr>
+            <tr><td>exFAT</td><td>Win / Mac</td><td>✘</td><td>✘</td><td>16 EB</td><td>Almacenamiento externo</td></tr>
+            <tr><td>ReFS</td><td>Windows</td><td>✔</td><td>✔</td><td>16 EB</td><td>Servidores / datos críticos</td></tr>
+            <tr><td>APFS</td><td>macOS</td><td>CoW</td><td>✔</td><td>8 EB</td><td>Macs con SSD</td></tr>
+            <tr><td>HFS+</td><td>macOS</td><td>✔</td><td>✘</td><td>8 EB</td><td>Macs legacy / HDD ext.</td></tr>
+            <tr><td>Ext4</td><td>Linux</td><td>✔</td><td>✘</td><td>16 TB</td><td>Uso general Linux</td></tr>
+            <tr><td>XFS</td><td>Linux</td><td>✔</td><td>✘</td><td>8 EB</td><td>Servidores de alto rendimiento</td></tr>
+            <tr><td>Btrfs</td><td>Linux</td><td>CoW</td><td>✔</td><td>16 EB</td><td>NAS / desarrollo</td></tr>
+            <tr><td>ZFS</td><td>Linux</td><td>CoW</td><td>✔</td><td>16 EB</td><td>Centros de datos</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span>Ciclo lectivo 2026</span>
+      <span>Arquitectura de la Computación</span>
+      <span>Página 10</span>
+    </div>
+
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       PÁGINA 11 – CAMBIO DE CONTEXTO
+  ══════════════════════════════════════════ -->
+  <div class="page page-content">
+
+    <div class="header">
+      <img src="LOGO.png" alt="Logo" class="logo" />
+      <p class="university">Universidad Blas Pascal</p>
+      <p class="faculty">Arquitectura de Computadoras I</p>
+    </div>
+
+    <div class="content-body">
+
+      <h2 class="page-title">Esquematización del Cambio de Contexto en<br /><span>Procesos de Diferente Tamaño</span></h2>
+
+      <p class="page-desc">En la computación moderna, la sensación de que un sistema ejecuta múltiples aplicaciones al mismo tiempo es una ilusión creada por el <strong>Cambio de Contexto</strong>. Dado que un núcleo de CPU solo puede ejecutar una instrucción a la vez, el Sistema Operativo alterna entre procesos a una velocidad imperceptible (milisegundos). Esta capacidad de "suspender" y "reanudar" tareas sin errores define a un sistema multitarea. Sin embargo, representa un <strong>overhead</strong> (sobrecarga) que consume ciclos de CPU que de otro modo se usarían para cálculo real.</p>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">A. Definición de los Sujetos de Estudio</h3>
+        <table class="ascii-table">
+          <thead>
+            <tr><th>Tipo de Proceso</th><th>Ejemplo</th><th>Características</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Liviano (I/O Bound)</strong></td>
+              <td>Editor de texto, script de monitoreo</td>
+              <td>Usa muy poco la CPU, requiere respuestas rápidas. Estado minimalista en memoria.</td>
+            </tr>
+            <tr>
+              <td><strong>Estándar (CPU Bound Moderado)</strong></td>
+              <td>Aplicación de base de datos</td>
+              <td>Cantidad moderada de datos en memoria, requiere ciclos constantes de CPU.</td>
+            </tr>
+            <tr>
+              <td><strong>Pesado (Memory/Compute Bound)</strong></td>
+              <td>Motor de renderizado 3D, modelo de IA</td>
+              <td>Ocupa gran parte de la RAM, satura los registros de la FPU.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">B. El Mecanismo del Cambio de Contexto</h3>
+        <p class="page-desc">El procedimiento se rige por la interacción entre el <strong>Planificador (Scheduler)</strong> y el <strong>Bloque de Control de Proceso (PCB)</strong>.</p>
+        <div class="schema-container">
+          <img src="FLUJO.jpeg" alt="Flujo del Cambio de Contexto" class="schema-img" />
+        </div>
+      </div>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">C. Impacto del Tamaño en la Eficiencia</h3>
+
+        <p class="page-desc"><strong>1. Latencia de Recuperación del "Working Set"</strong></p>
+        <ul class="conclusion-list">
+          <li><strong>Procesos pequeños:</strong> Sus datos suelen permanecer en caché L1/L2. El cambio es casi instantáneo.</li>
+          <li><strong>Procesos grandes:</strong> Sufren <em>Cold Start</em> (inicio en frío). Deben traer datos desde la RAM (mucho más lenta) porque el proceso anterior "ensució" la caché.</li>
+        </ul>
+
+        <p class="page-desc" style="margin-top:0.6rem;"><strong>2. Gestión del TLB (Translation Lookaside Buffer)</strong></p>
+        <ul class="conclusion-list">
+          <li>El TLB es una caché de hardware que acelera la traducción de direcciones virtuales a físicas.</li>
+          <li>Al cambiar entre procesos de diferente tamaño, el SO suele invalidar el TLB. Un proceso grande obliga al hardware a realizar <em>page table walks</em> constantes, penalizando la velocidad de ejecución inicial.</li>
+        </ul>
+
+        <p class="page-desc" style="margin-top:0.6rem;"><strong>3. El Dilema del Planificador</strong></p>
+        <ul class="conclusion-list">
+          <li><strong>Quantum corto:</strong> Los procesos pequeños parecen fluidos, pero el sistema gasta entre el 20% y el 30% de su potencia solo gestionando cambios de contexto.</li>
+          <li><strong>Quantum largo:</strong> El proceso grande termina eficientemente, pero el sistema se siente "trabado" para el usuario.</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span>Ciclo lectivo 2026</span>
+      <span>Arquitectura de la Computación</span>
+      <span>Página 11</span>
+    </div>
+
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       PÁGINA 12 – COMPARATIVA INTEL vs AMD
+  ══════════════════════════════════════════ -->
+  <div class="page page-content">
+
+    <div class="header">
+      <img src="LOGO.png" alt="Logo" class="logo" />
+      <p class="university">Universidad Blas Pascal</p>
+      <p class="faculty">Arquitectura de Computadoras I</p>
+    </div>
+
+    <div class="content-body">
+
+      <h2 class="page-title">Construcción de Tabla Comparativa de<br /><span>Modelos de Microprocesadores Intel y AMD</span></h2>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">Evolución de Procesadores Intel (1971 – 2026)</h3>
+        <table class="ascii-table intel-table">
+          <thead>
+            <tr>
+              <th>Año</th>
+              <th>Modelo</th>
+              <th>Litografía</th>
+              <th>Arquitectura</th>
+              <th>Frecuencia</th>
+              <th>Características Especiales</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1971</td><td>4004</td><td>10 μm</td><td>4-bit, 1 núcleo</td><td>740 kHz</td><td>Primer microprocesador comercial</td></tr>
+            <tr><td>1978</td><td>8086</td><td>3 μm</td><td>16-bit, 1 núcleo</td><td>5–10 MHz</td><td>Base de la arquitectura x86</td></tr>
+            <tr><td>1985</td><td>80386</td><td>1.5 μm</td><td>32-bit</td><td>12–40 MHz</td><td>Multitarea</td></tr>
+            <tr><td>1993</td><td>Pentium</td><td>800 nm</td><td>32-bit, 1 núcleo</td><td>60–66 MHz</td><td>Ejecución superscalar</td></tr>
+            <tr><td>1999</td><td>Pentium III</td><td>250 nm</td><td>32-bit</td><td>hasta 1 GHz</td><td>SSE</td></tr>
+            <tr><td>2000</td><td>Pentium 4</td><td>180–65 nm</td><td>32-bit</td><td>hasta 3.8 GHz</td><td>Alta frecuencia (NetBurst)</td></tr>
+            <tr><td>2006</td><td>Core 2 Duo</td><td>65 nm</td><td>64-bit, 2 núcleos</td><td>1.8–3.3 GHz</td><td>Eficiencia energética</td></tr>
+            <tr><td>2008</td><td>Core i7 (Nehalem)</td><td>45 nm</td><td>64-bit, 4 núcleos</td><td>hasta 3.33 GHz</td><td>Hyper-Threading, Turbo Boost</td></tr>
+            <tr><td>2011</td><td>Sandy Bridge</td><td>32 nm</td><td>64-bit, 4 núcleos</td><td>hasta 3.8 GHz</td><td>GPU integrada</td></tr>
+            <tr><td>2015</td><td>Skylake</td><td>14 nm</td><td>64-bit</td><td>hasta 4.2 GHz</td><td>DDR4, mejor IPC</td></tr>
+            <tr><td>2017</td><td>Coffee Lake</td><td>14 nm</td><td>64-bit, hasta 6 núcleos</td><td>hasta 4.7 GHz</td><td>Más núcleos en gama media</td></tr>
+            <tr><td>2021</td><td>Rocket Lake</td><td>14 nm</td><td>64-bit, hasta 8 núcleos</td><td>hasta 5.3 GHz</td><td>AVX-512, mejora IPC</td></tr>
+            <tr><td>2021</td><td>Alder Lake (12ª Gen)</td><td>Intel 7 (~10 nm)</td><td>64-bit híbrido (P+E)</td><td>hasta 5.3 GHz</td><td>Arquitectura híbrida, DDR5, PCIe 5.0</td></tr>
+            <tr><td>2022</td><td>Raptor Lake (13ª Gen)</td><td>Intel 7</td><td>64-bit híbrido</td><td>hasta 5.8 GHz</td><td>Más núcleos E, mayor rendimiento</td></tr>
+            <tr><td>2023</td><td>Raptor Lake Refresh</td><td>Intel 7</td><td>64-bit híbrido</td><td>hasta 6.0 GHz</td><td>Mejoras incrementales</td></tr>
+            <tr><td>2024</td><td>Core Ultra (Meteor Lake)</td><td>Intel 4 (~7 nm)</td><td>64-bit híbrido + IA</td><td>hasta 5 GHz</td><td>Chiplets + NPU (IA)</td></tr>
+            <tr><td>2025</td><td>Arrow Lake</td><td>20A / 3 nm</td><td>64-bit híbrido</td><td>&gt;5 GHz</td><td>Mejor eficiencia energética</td></tr>
+            <tr><td>2026</td><td>Panther Lake / Core Ultra S3</td><td>18A (~2 nm)</td><td>64-bit híbrido + IA</td><td>—</td><td>IA avanzada, NPU, nueva arquitectura</td></tr>
+            <tr><td>2026+</td><td>Nova Lake (previsto)</td><td>18A</td><td>64-bit híbrido</td><td>—</td><td>Próxima gran generación</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span>Ciclo lectivo 2026</span>
+      <span>Arquitectura de la Computación</span>
+      <span>Página 12</span>
+    </div>
+
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       PÁGINA 13 – EVOLUCIÓN AMD
+  ══════════════════════════════════════════ -->
+  <div class="page page-content">
+
+    <div class="header">
+      <img src="LOGO.png" alt="Logo" class="logo" />
+      <p class="university">Universidad Blas Pascal</p>
+      <p class="faculty">Arquitectura de Computadoras I</p>
+    </div>
+
+    <div class="content-body">
+
+      <h2 class="page-title">Evolución de Procesadores <span>AMD (1975 – 2026)</span></h2>
+
+      <div class="ascii-section">
+        <h3 class="section-heading">Evolución de Procesadores AMD (1975 – 2026)</h3>
+        <table class="ascii-table intel-table">
+          <thead>
+            <tr>
+              <th>Año</th>
+              <th>Modelo</th>
+              <th>Litografía</th>
+              <th>Arquitectura</th>
+              <th>Frecuencia</th>
+              <th>Características Especiales</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1975</td><td>Am9080</td><td>6 μm</td><td>8-bit</td><td>2 MHz</td><td>Compatible con Intel</td></tr>
+            <tr><td>1999</td><td>Athlon</td><td>250 nm</td><td>32-bit</td><td>500 MHz – 1 GHz</td><td>Superó a Intel en rendimiento</td></tr>
+            <tr><td>2003</td><td>Athlon 64</td><td>130 nm</td><td>64-bit</td><td>1.8 – 2.4 GHz</td><td>x86-64 (revolución 64 bits)</td></tr>
+            <tr><td>2006</td><td>Athlon X2</td><td>90 nm</td><td>64-bit, 2 núcleos</td><td>hasta 3 GHz</td><td>Multinúcleo accesible</td></tr>
+            <tr><td>2011</td><td>FX-8150 (Bulldozer)</td><td>32 nm</td><td>64-bit, 8 núcleos</td><td>3.6 – 4.2 GHz</td><td>Arquitectura modular</td></tr>
+            <tr><td>2017</td><td>Ryzen 7 1800X (Zen)</td><td>14 nm</td><td>64-bit, 8 núcleos</td><td>3.6 – 4.0 GHz</td><td>SMT, regreso competitivo</td></tr>
+            <tr><td>2019</td><td>Ryzen 3000 (Zen 2)</td><td>7 nm</td><td>64-bit</td><td>hasta 4.6 GHz</td><td>Chiplets, gran mejora IPC</td></tr>
+            <tr><td>2020</td><td>Ryzen 5000 (Zen 3)</td><td>7 nm</td><td>64-bit</td><td>hasta 4.9 GHz</td><td>Gran mejora IPC</td></tr>
+            <tr><td>2022</td><td>Ryzen 7000 (Zen 4)</td><td>5 nm</td><td>64-bit</td><td>hasta 5.7 GHz</td><td>DDR5, PCIe 5.0</td></tr>
+            <tr><td>2023</td><td>Ryzen 7000X3D</td><td>5 nm</td><td>64-bit</td><td>hasta 5 GHz</td><td>3D V-Cache (gaming)</td></tr>
+            <tr><td>2024</td><td>Ryzen 9000 (Zen 5)</td><td>4 nm</td><td>64-bit, 6–16 núcleos</td><td>&gt;5 GHz</td><td>Mejor eficiencia y rendimiento</td></tr>
+            <tr><td>2025</td><td>Ryzen 9 9950X3D</td><td>4 nm</td><td>64-bit, 16 núcleos</td><td>hasta 5.7 GHz</td><td>3D V-Cache avanzado</td></tr>
+            <tr><td>2025</td><td>Threadripper 9000</td><td>4 nm</td><td>hasta 96 núcleos</td><td>—</td><td>Workstation extremo</td></tr>
+            <tr><td>2026</td><td>Ryzen AI 400</td><td>4 nm</td><td>64-bit, 6–8 núcleos</td><td>—</td><td>IA integrada (NPU)</td></tr>
+            <tr><td>2026</td><td>Ryzen 9000X3D (variantes)</td><td>4 nm</td><td>64-bit</td><td>—</td><td>Gaming extremo con caché 3D</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <span>Ciclo lectivo 2026</span>
+      <span>Arquitectura de la Computación</span>
+      <span>Página 13</span>
+    </div>
+
+  </div>
+
+</body>
+</html>
